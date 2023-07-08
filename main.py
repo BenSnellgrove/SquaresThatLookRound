@@ -7,7 +7,7 @@ pygame.init()
 colour_background = (255, 255, 255)
 
 # Game Setup
-FPS = 60
+FPS = 60  # because higher refresh rates aren't real
 fpsClock = pygame.time.Clock()
 WINDOW_WIDTH = 400
 WINDOW_HEIGHT = 300
@@ -34,16 +34,10 @@ class Line:
             (end.z - start.z) ** 2
         ) ** 0.5
 
-cube_coords = [
-    Coord(0, 0, 0),
-]
 
-
-# The main function that controls the game
 def main():
     looping = True
 
-    # The main game loop
     while looping:
 
         # Input handling
